@@ -4,105 +4,127 @@
 <br />
 <h2>Utilities Used</h2>
 <ul>
-    <li><b>Windows</b> -Operating system used for first half of the lab</li>
+    <li><b>Windows</b> -The operating system used for first half of the lab</li>
     <li><b>Event View</b> -Program used to view event logs</li>
     <li><b>File Explorer</b> -Program used to find files</li>
     <li><b>Task Manager</b> -Program used to view running processes and programs</li>
-    <li><b>Ubuntu</b> -Operating system used for the second half.</li>
-    <li><b>Apache2</b> -Web server software for hosting websites</li>
+    <li><b>Ubuntu</b> -The operating system used for the second half, the Linux portion.</li>
 </ul>
 <br />
 <h3>Windows Tasks:</h3>
-<h4>Task 1:</h4>
-<p>Define a function: Write a program that minimizes the line of code to have your robot jump the hurdles:</p> 
+<h4>Task 1: Low Disk Space</h4>
+<p>To view the error logs, I opened the Event Viewer program and navigated to the Application logs inside of the Windows Logs file. I click the first error log in the Application pane to view the first error log. You can see the issue in the details tab toward the bottom. </p> 
 <p align="center">
-<img src="https://i.imgur.com/DEy6f05.png" height="80%" width="80%" alt="average height"/>
+<img src="https://i.imgur.com/jcFwg5r.png" height="80%" width="80%" alt="average height"/>
 </p>
-<p align="left"> This code can be written more concisely by using a for loop written as:</p>
-"for x in range(6):</br>
->>>>    hurdle()"
-<br />
-<br />
-<h4>Task 2:</h4> 
-<p>While loop: Reeborg is participating in a hurdle race without knowing the race's length beforehand. He must run the course, similar to a specified path, and stop only at the flag displayed after the race starts.</p> 
+<p align="left"> The log states "Error: Disk space is super low, fix it!" I then open the file viewer program. I select "This PC" on the navigation panel on the left. I filter my search to show all files larger than 4gb.</p>
+<p align="center">
+<img src="https://i.imgur.com/U4oTEVk.png" height="80%" width="80%" alt="average height"/>
+</p>
+<p align="left"> Once the search results are returned, I deleted the file by right clicking it and selecting the delete option, you could also delete the file by selecting it and hitting the delete button on your keyboard.</p>
 <br /> 
 <p align="center">
-<img src="https://i.imgur.com/LzmlvKO.png" height="80%" width="80%" alt="max"/>
+<img src="https://i.imgur.com/ExD8KmC.png" height="80%" width="80%" alt="average height"/>
 </p>
-<p align="left"> The number of hurdles now change each time the map is loaded. This while loop will until the robot reaches the finish line. </p> 
-<br /> 
-<br />
-<h4>Task 3:</h4>
-<p>While Loop and if statement: Reeborg has entered a hurdle race. Make him run the course, following the path shown. The position and number of hurdles change each time this world is reloaded.</p> 
 <p align="center">
-<img src="https://i.imgur.com/yQuSeHl.png" height="80%" width="80%" alt="calc"/>
+<img src="https://i.imgur.com/8TC0j45.png" height="80%" width="80%" alt="average height"/>
 </p>
-<p align="left"> The code below takes into account variable hurdle heights:  </p>
-<p align="center">
-<img src="https://i.imgur.com/OXUVlnq.png" height="80%" width="80%" alt="max"/>
 <br />
 <br />
-<h4>Task 4:</h4> 
-<p> Reeborg was exploring a dark maze and the battery in its flashlight ran out.
-
-Write a program using an if/elif/else statement so Reeborg can find the exit. The secret is to have Reeborg follow along the right edge of the maze, turning right if it can, going straight ahead if it can’t turn right, or turning left as a last resort:</p> 
+<h4>Task 2:Edit File Permissions</h4> 
+<p>I returned to Event Viewer to view the second log. </p> 
 <br /> 
 <p align="center">
-<img src="https://i.imgur.com/0u8AVJd.png" height="80%" width="80%" alt="maze"/>
+<img src="https://i.imgur.com/PukYfiP.png" height="80%" width="80%" alt="max"/>
 </p>
-<p align="left"> My robot took the long way around. But by following this algorithm it was able to make it to the end. </p> 
-<br /> 
-<br /> 
-<h4>Task 5:</h4>
-<p>Define a function: Write a program that minimizes the line of code to have your robot jump the hurdles:</p> 
+<p align="left"> The details of the seconnd error log states "Error: Write Permission Denied for 'Everyone' C:\Users\Temp\super_secret_file.txt". I then swapped back to File Viewer and navigate to the file in the log, right clickedthe file and selected properties</p> 
 <p align="center">
-<img src="https://i.imgur.com/DEy6f05.png" height="80%" width="80%" alt="average height"/>
+<img src="https://i.imgur.com/zY1FxRp.png" height="80%" width="80%" alt="average height"/>
 </p>
-<p align="left"> This code can be written more concisely by using a for loop written as:</p>
-"for x in range(6):</br>
->>>>    hurdle()"
+<p align="left"> I selected the Security tab at the top of the file properties pane. I selected edit, then chose the "Everyone" group and clicked the "Write" box to give the group the ability to write to the file. I applied the changes and hit ok in both panes.</p>
+<br /> 
+<p align="center">
+<img src="https://i.imgur.com/fYDxJ7i.png" height="80%" width="80%" alt="average height"/>
+</p>
+<br /> 
 <br />
+<h4>Task 3:End or Kill Task</h4>
+<p>I returned to Event Viewer to view the third log. </p> 
+<br /> 
+<p align="center">
+<img src="https://i.imgur.com/hsBlxYe.png" height="80%" width="80%" alt="max"/>
+</p>
+<p align="left"> The details of the third error log states "Error: Process totally_not_malicious.exe is malicious, terminate the process immediately!". I then opened the task manager by hitting ctrl+shift+esc. I found the task in the list of processes, right clicked it and selected End Task </p> 
+<p align="center">
+<img src="https://i.imgur.com/32VFquC.png" height="80%" width="80%" alt="average height"/>
+</p>
+<p align="left"> I selected the Security tab at the top of the file properties pane. I selected edit, then chose the "Everyone" group and clicked the "Write" box to give the group the ability to write to the file. I applied the changes and hit ok in both panes.</p>
+<br /> 
 <br />
+<h4>Task 4:Update out-of-date Software</h4> 
+<p>I returned to Event Viewer to view the 4th log. </p> 
+<br /> 
+<p align="center">
+<img src="https://i.imgur.com/kpAUZUg.png" height="80%" width="80%" alt="max"/>
+</p>
+<p align="left"> The details of the fourth error log states "Error: VLC-Package out of date, upgrade to the latest version". I opened the program, clicked the help tab at the top and selected Check for Updates. </p> 
+<p align="center">
+<img src="https://i.imgur.com/oZBB2ul.png" height="80%" width="80%" alt="average height"/>
+</p>
+<p align="left"> The program found that there were updates available and asked if I wanted to download them. I selected yes.</p>
+<br /> 
+<p align="center">
+<img src="https://i.imgur.com/qITZUaE.png" height="80%" width="80%" alt="average height"/></p>
+<p align="left"> I then installed the updates by selecting install. </p> 
+<p align="center">
+<img src="https://i.imgur.com/kyIE3Ey.png" height="80%" width="80%" alt="average height"/>
+</p>
+<br /> 
+<br />
+<h4>Task 5: Remove corrupted File </h4>
+<p>I returned to Event Viewer to view the last log. </p> 
+<br /> 
+<p align="center">
+<img src="https://i.imgur.com/yYKZEgY.png" height="80%" width="80%" alt="max"/>
+</p>
+<p align="left"> The last log states "Error: There is a corrupted file found in C:\Users\corrupted_file. Remove this file". I located the corrupted file in File Explorer by navigatinng to the stated file path. Right licked the file and deleted it. </p> 
+<p align="center">
+<img src="https://i.imgur.com/lw7ioZi.png" height="80%" width="80%" alt="average height"/>
+</p>
+<br /> 
+<br /> 
 <h3>Linux Tasks:</h3>
-<h4>Task 1:</h4>
-<p>Define a function: Write a program that minimizes the line of code to have your robot jump the hurdles:</p> 
+<h4>Task 1: Low Disk Space</h4>
+<p>I started by viewing the system logs in the /var/logs/ directories.</p> 
 <p align="center">
-<img src="https://i.imgur.com/DEy6f05.png" height="80%" width="80%" alt="average height"/>
+<img src="https://i.imgur.com/kkpvNTW.png" height="80%" width="80%" alt="average height"/>
 </p>
-<p align="left"> This code can be written more concisely by using a for loop written as:</p>
-"for x in range(6):</br>
->>>>    hurdle()"
-<br />
-<br />
-<h4>Task 2:</h4>
-<p>Define a function: Write a program that minimizes the line of code to have your robot jump the hurdles:</p> 
+<p align="left"> I listed the files in the home directory with the du command, piped the results to the sort command, I used the -n and -r  flags to sor and treat the string output on each line as a number (the file size), and to sort in reverse order so that the largest files are listed first. Then piped the results to list the top 5 results. I then removed the large file. </p>
 <p align="center">
-<img src="https://i.imgur.com/DEy6f05.png" height="80%" width="80%" alt="average height"/>
+<img src="https://i.imgur.com/FqfTfq9.png" height="80%" width="80%" alt="average height"/>
 </p>
-<p align="left"> This code can be written more concisely by using a for loop written as:</p>
-"for x in range(6):</br>
->>>>    hurdle()"
+<br /> 
 <br />
-<br />
-<h4>Task 3:</h4>
-<p>Define a function: Write a program that minimizes the line of code to have your robot jump the hurdles:</p> 
+<h4>Task 2: Remove Corrupted File</h4>
+<p>I used a similar command to list all of the files in the /home/lab/ direcotry and used the rm command to removed the file.</p> 
 <p align="center">
-<img src="https://i.imgur.com/DEy6f05.png" height="80%" width="80%" alt="average height"/>
+<img src="https://i.imgur.com/9pq4MNj.png" height="80%" width="80%" alt="average height"/>
 </p>
-<p align="left"> This code can be written more concisely by using a for loop written as:</p>
-"for x in range(6):</br>
->>>>    hurdle()"
+<br /> 
 <br />
-<br />
-<h4>Task 4:</h4>
-<p>Define a function: Write a program that minimizes the line of code to have your robot jump the hurdles:</p> 
+<h4>Task 3: Update out-of-date Software</h4>
+<p>I started by using the command 'sudo apt-get update' followed by 'sudo apt-install'. Some dependencies were missing so those needed to be installed as well. I enterd 'Y' when prompted to approve the additional disk spaced needed.</p> 
 <p align="center">
-<img src="https://i.imgur.com/DEy6f05.png" height="80%" width="80%" alt="average height"/>
+<img src="https://i.imgur.com/MBv4yzz.png" height="80%" width="80%" alt="average height"/>
 </p>
-<p align="left"> This code can be written more concisely by using a for loop written as:</p>
-"for x in range(6):</br>
->>>>    hurdle()"
 <br />
+<br />
+<h4>Task 4: Terminate or Kill a process</h4>
+<p>I used the 'ps' command to list the processes current running with the '-ef' to list every running process in full-format-listing.</p> 
+<p align="center">
+<img src="https://i.imgur.com/9pq4MNj.png" height="80%" width="80%" alt="average height"/>
+</p>
+<br /> 
 <br />
 <h4>Task 5:</h4>
 <p>Define a function: Write a program that minimizes the line of code to have your robot jump the hurdles:</p> 
@@ -115,4 +137,4 @@ Write a program using an if/elif/else statement so Reeborg can find the exit. Th
 <br />
 <br />
 <h3>Conclusion:</h3>
-<p >This was a fun way of seeing our code in action and how the logic and indentation of your code have a big impact on the results. That's it for day 6.</p>
+<p >This exercise is a perfect example of how much more efficient using a command line interface(CLI) can be. It may take more time to remember the commands, but it's certainly quicker than navigating through a graphical user interface(GUI)</p>
