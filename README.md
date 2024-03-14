@@ -17,7 +17,7 @@
 <p align="center">
 <img src="https://i.imgur.com/jcFwg5r.png" height="80%" width="80%" alt="average height"/>
 </p>
-<p align="left"> The log states "Error: Disk space is super low, fix it!" I then open the file viewer program. I select "This PC" on the navigation panel on the left. I filter my search to show all files larger than 4gb.</p>
+<p align="left"> The log states "Error: Disk space is super low, fix it!" I then open the file viewer program. I select "This PC" on the navigation panel on the left. I filter my search to show all files larger than 4GB.</p>
 <p align="center">
 <img src="https://i.imgur.com/U4oTEVk.png" height="80%" width="80%" alt="average height"/>
 </p>
@@ -37,7 +37,7 @@
 <p align="center">
 <img src="https://i.imgur.com/PukYfiP.png" height="80%" width="80%" alt="max"/>
 </p>
-<p align="left"> The details of the second error log states, "Error: Write Permission Denied for 'Everyone' C:\Users\Temp\super_secret_file.txt". I then swapped back to File Viewer and navigate to the file in the log, right clickedthe file and selected properties</p> 
+<p align="left"> The details of the second error log states, "Error: Write Permission Denied for 'Everyone' C:\Users\Temp\super_secret_file.txt". I then swapped back to File Viewer and navigate to the file in the log, right click the file and selected properties</p> 
 <p align="center">
 <img src="https://i.imgur.com/zY1FxRp.png" height="80%" width="80%" alt="average height"/>
 </p>
@@ -48,7 +48,7 @@
 </p>
 <br /> 
 <br />
-<h4>Task 3:End or Kill Task</h4>
+<h4>Task 3:End or Kill a Process</h4>
 <p>I returned to Event Viewer to view the third log. </p> 
 <br /> 
 <p align="center">
@@ -81,7 +81,7 @@
 </p>
 <br /> 
 <br />
-<h4>Task 5: Remove corrupted File </h4>
+<h4>Task 5: Remove a Corrupted File </h4>
 <p>I returned to Event Viewer to view the last log. </p> 
 <br /> 
 <p align="center">
@@ -105,7 +105,7 @@
 </p>
 <br /> 
 <br />
-<h4>Task 2: Remove Corrupted File</h4>
+<h4>Task 2: Remove a Corrupted File</h4>
 <p>I used a similar command to list all of the files in the /home/lab/directory and used the rm command to remove the file.</p> 
 <p align="center">
 <img src="https://i.imgur.com/9pq4MNj.png" height="80%" width="80%" alt="average height"/>
@@ -119,14 +119,14 @@
 </p>
 <br />
 <br />
-<h4>Task 4: Terminate or Kill a process</h4>
+<h4>Task 4: Terminate or Kill a Process</h4>
 <p>I used the 'ps' command to list the processes current running with the '-ef' to list every running process in full-format-listing. I used the 'kill' command to end the malicious program, process ID(PID) 316.</p> 
 <p align="center">
 <img src="https://i.imgur.com/xGb4hTX.png" height="80%" width="80%" alt="average height"/>
 </p>
 <br /> 
 <br />
-<h4>Task 5:</h4>
+<h4>Task 5: Edit File Permissions</h4>
 <p>For the final task, I changed directories to /home/lab/. I changed the permission for everyone to be able to be able to read, write and execute for the file 'super_secret_file.txt' by using the 'chmod 777' command. I then listed the permissions of all files and directories within the /home/lab/ directory using the '-la' flags to make sure everyone has access to the file.</p> 
 <p align="center">
 <img src="https://i.imgur.com/Y4EnDlG.png" height="80%" width="80%" alt="average height"/>
