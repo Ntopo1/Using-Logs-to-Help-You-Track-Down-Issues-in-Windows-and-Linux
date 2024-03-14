@@ -134,4 +134,4 @@
 <br /> 
 <br />
 <h3>Conclusion:</h3>
-<p >This exercise is a perfect example of how much more efficient using a command line interface(CLI) can be. It may take more time to remember the commands, but it's certainly quicker than navigating through a graphical user interface(GUI). Finding error logs will not always be clustered and as straightforward as this lab, the same thing applies to file names, they will not always have such obvious names.</p>
+<p >This concludes the lab. This exercise is a perfect example of how much more efficient using a command line interface(CLI) can be. It may take more time to remember the commands, but it's certainly quicker than navigating through a graphical user interface(GUI). Finding error logs will not always be clustered and as straightforward as this lab, the same thing applies to file names, they will not always have such obvious names.</p>
