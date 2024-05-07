@@ -19,7 +19,7 @@
 </p>
 <p align="left"> The log states "Error: Disk space is super low, fix it!" I then open the file viewer program. I select "This PC" on the navigation panel on the left. I filter my search to show all files larger than 4GB.</p>
 <p align="center">
-<img src="https://i.imgur.com/U4oTEVk.png" height="80%" width="80%" alt="average height"/>
+<img src="https://i.imgur.com/UrFLUHS.png" height="80%" width="80%" alt="average height"/>
 </p>
 <p align="left"> Once the search results are returned, I deleted the file by right-clicking it and selecting the delete option, you could also delete the file by selecting it and hitting the delete button on your keyboard.</p>
 <br /> 
@@ -35,16 +35,16 @@
 <p>I returned to Event Viewer to view the second log. </p> 
 <br /> 
 <p align="center">
-<img src="https://i.imgur.com/PukYfiP.png" height="80%" width="80%" alt="max"/>
+<img src="https://i.imgur.com/k86DIU7.png" height="80%" width="80%" alt="max"/>
 </p>
 <p align="left"> The details of the second error log states, "Error: Write Permission Denied for 'Everyone' C:\Users\Temp\super_secret_file.txt". I then swapped back to File Viewer and navigate to the file in the log, right click the file and selected properties</p> 
 <p align="center">
-<img src="https://i.imgur.com/zY1FxRp.png" height="80%" width="80%" alt="average height"/>
+<img src="https://i.imgur.com/Pw1o77d.png" height="80%" width="80%" alt="average height"/>
 </p>
 <p align="left"> I selected the Security tab at the top of the file properties pane. I selected edit, then chose the "Everyone" group and clicked the "Write" box to give the group the ability to write to the file. I applied the changes and hit ok in both panes.</p>
 <br /> 
 <p align="center">
-<img src="https://i.imgur.com/fYDxJ7i.png" height="80%" width="80%" alt="average height"/>
+<img src="https://i.imgur.com/yNui5W1.png" height="80%" width="80%" alt="average height"/>
 </p>
 <br /> 
 <br />
@@ -52,24 +52,23 @@
 <p>I returned to Event Viewer to view the third log. </p> 
 <br /> 
 <p align="center">
-<img src="https://i.imgur.com/hsBlxYe.png" height="80%" width="80%" alt="max"/>
+<img src="https://i.imgur.com/xN2nzzc.png" height="80%" width="80%" alt="max"/>
 </p>
 <p align="left"> The details of the third error log states, "Error: Process totally_not_malicious.exe is malicious, terminate the process immediately!". I then opened the task manager by hitting ctrl+shift+esc. I found the task in the list of processes, right clicked it and selected End Task </p> 
 <p align="center">
 <img src="https://i.imgur.com/32VFquC.png" height="80%" width="80%" alt="average height"/>
 </p>
-<p align="left"> I selected the Security tab at the top of the file properties pane. I selected edit, then chose the "Everyone" group and clicked the "Write" box to give the group the ability to write to the file. I applied the changes and hit ok in both panes.</p>
 <br /> 
 <br />
 <h4>Task 4:Update out-of-date Software</h4> 
 <p>I returned to Event Viewer to view the 4th log. </p> 
 <br /> 
 <p align="center">
-<img src="https://i.imgur.com/kpAUZUg.png" height="80%" width="80%" alt="max"/>
+<img src="https://i.imgur.com/PaCQl42.png" height="80%" width="80%" alt="max"/>
 </p>
 <p align="left"> The details of the fourth error log states, "Error: VLC-Package out of date, upgrade to the latest version". I opened the program, clicked the help tab at the top and selected Check for Updates. </p> 
 <p align="center">
-<img src="https://i.imgur.com/oZBB2ul.png" height="80%" width="80%" alt="average height"/>
+<img src="https://i.imgur.com/FASfaN8.png" height="80%" width="80%" alt="average height"/>
 </p>
 <p align="left"> The program found that there were updates available and asked if I wanted to download them. I selected yes.</p>
 <br /> 
@@ -85,11 +84,11 @@
 <p>I returned to Event Viewer to view the last log. </p> 
 <br /> 
 <p align="center">
-<img src="https://i.imgur.com/yYKZEgY.png" height="80%" width="80%" alt="max"/>
+<img src="https://i.imgur.com/e0xTjJD.png" height="80%" width="80%" alt="max"/>
 </p>
 <p align="left"> The last log states "Error: There is a corrupted file found in C:\Users\corrupted_file. Remove this file". I located the corrupted file in File Explorer by navigating to the stated file path. Right clicked the file and deleted it. </p> 
 <p align="center">
-<img src="https://i.imgur.com/lw7ioZi.png" height="80%" width="80%" alt="average height"/>
+<img src="https://i.imgur.com/aTI9Jeb.png" height="80%" width="80%" alt="average height"/>
 </p>
 <br /> 
 <br /> 
