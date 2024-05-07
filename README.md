@@ -96,24 +96,50 @@
 <h3>Linux Tasks:</h3>
 <h4>Task 1: Low Disk Space</h4>
 <p>I started by viewing the system logs in the /var/logs/ directories.</p> 
+
+```
+ls /var/logs
+```
+
 <p align="center">
 <img src="https://i.imgur.com/kkpvNTW.png" height="80%" width="80%" alt="average height"/>
 </p>
-<p align="left"> I listed the files in the home directory with the du command, piped the results to the sort command, and used the -n and -r  flags to sort and treat the string output on each line as a number (the file size), and to sort in reverse order so that the largest files are listed first. Then piped the results to list the top 5 results. I then removed the large file. </p>
+<p align="left"> I listed the files in the home directory with the 'du' command, piped the results to the sort command, and used the -n and -r  flags to sort and treat the string output on each line as a number (the file size), and to sort in reverse order so that the largest files are listed first. Then piped the results to list the top 5 results. I then removed the large file. </p>
+
+```
+sudo du -a /home | sort -n -r | head -n 5
+```
+```
+sudo rm /home/lab/storage/ultra_mega_large.txt
+```
 <p align="center">
 <img src="https://i.imgur.com/FqfTfq9.png" height="80%" width="80%" alt="average height"/>
 </p>
 <br /> 
 <br />
 <h4>Task 2: Remove a Corrupted File</h4>
-<p>I used a similar command to list all of the files in the /home/lab/directory and used the rm command to remove the file.</p> 
+<p>I used a similar command to list all of the files in the /home/lab/directory and used the 'rm' command to remove the file.</p> 
+
+```
+sudo du -a /home/lab | sort -n -r
+```
+
 <p align="center">
 <img src="https://i.imgur.com/9pq4MNj.png" height="80%" width="80%" alt="average height"/>
 </p>
 <br /> 
 <br />
 <h4>Task 3: Update out-of-date Software</h4>
-<p>I started by using the command 'sudo apt-get update' followed by 'sudo apt-install'. Some dependencies were missing so those needed to be installed as well. I entered 'Y' when prompted to approve the additional disk space needed.</p> 
+<p>I started by using the command 'sudo apt-get update' followed by 'sudo apt-install'. 
+
+```
+sudo apt-get update
+```
+
+```
+sudo apt-install
+```
+Some dependencies were missing so those needed to be installed as well. I entered 'Y' when prompted to approve the additional disk space needed.</p> 
 <p align="center">
 <img src="https://i.imgur.com/MBv4yzz.png" height="80%" width="80%" alt="average height"/>
 </p>
@@ -121,6 +147,13 @@
 <br />
 <h4>Task 4: Terminate or Kill a Process</h4>
 <p>I used the 'ps' command to list the processes current running with the '-ef' to list every running process in full-format-listing. I used the 'kill' command to end the malicious program, process ID(PID) 316.</p> 
+
+```
+ps -ef
+```
+```
+sudo kill 316
+```
 <p align="center">
 <img src="https://i.imgur.com/xGb4hTX.png" height="80%" width="80%" alt="average height"/>
 </p>
@@ -128,6 +161,19 @@
 <br />
 <h4>Task 5: Edit File Permissions</h4>
 <p>For the final task, I changed directories to /home/lab/. I changed the permission for everyone to be able to be able to read, write and execute for the file 'super_secret_file.txt' by using the 'chmod 777' command. I then listed the permissions of all files and directories within the /home/lab/ directory using the '-la' flags to make sure everyone has access to the file.</p> 
+
+```
+cd /home/lab
+```
+```
+ls -a
+```
+```
+sudo chmod 777 super_secret_file.txt
+```
+```
+ls -la
+```
 <p align="center">
 <img src="https://i.imgur.com/Y4EnDlG.png" height="80%" width="80%" alt="average height"/>
 </p>
