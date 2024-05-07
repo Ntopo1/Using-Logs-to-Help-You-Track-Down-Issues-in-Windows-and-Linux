@@ -1,4 +1,4 @@
-<h1> Using Logs to Help You Track Down an Issue in Windows and Linux</h1>
+<h1> Using Logs to Help Track Down an Issue in Windows and Linux</h1>
 <h2>Description</h2>
 <p>In this lab, I'll use logs to help you troubleshoot and track down issues in a Windows environment and a Linux environment. I will update out-of-date software, find and delete files, modify file permissions, find and terminate specific processes in both Windows and Linux.</p> 
 <br />
