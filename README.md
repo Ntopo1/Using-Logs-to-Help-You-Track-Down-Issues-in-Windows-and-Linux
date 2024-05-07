@@ -15,7 +15,7 @@
 <h4>Task 1: Low Disk Space</h4>
 <p>To view the error logs, I opened the Event Viewer program and navigated to the Application logs inside of the Windows Logs file. Click the first error log in the Application pane to view the first error log. You can see the issue in the details tab toward the bottom. </p> 
 <p align="center">
-<img src="https://i.imgur.com/jcFwg5r.png" height="80%" width="80%" alt="average height"/>
+<img src="https://i.imgur.com/piDxjsI.png" height="80%" width="80%" alt="average height"/>
 </p>
 <p align="left"> The log states "Error: Disk space is super low, fix it!" I then open the file viewer program. I select "This PC" on the navigation panel on the left. I filter my search to show all files larger than 4GB.</p>
 <p align="center">
